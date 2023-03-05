@@ -19,7 +19,7 @@
         {
             if (!this.implementations.ContainsKey(type))
             {
-                throw new ArgumentNullException($"${type.FullName} is not registered");
+                throw new ArgumentNullException($"{type.FullName} is not registered");
             }
 
             var implementationType = this.implementations[type];
